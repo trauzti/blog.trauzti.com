@@ -1,0 +1,6 @@
+$ python fibonacci.py fibo 40
+102334155
+$ python fibonacci.py fibo_memoized 40
+10334155
+$ python fibonacci.py fibo_loop 40
+102334155
