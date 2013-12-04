@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import Column, Integer, String

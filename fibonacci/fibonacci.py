@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys
 
 def fibo(n):
@@ -36,20 +37,20 @@ fns = { "fibo" : fibo,
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print "Usage: %s <function> <n>"
+        print("Usage: python %s <function> <n>" % sys.argv[0])
         exit()
 
     fn = sys.argv[1]
 
     if fn not in fns:
-        print "The function %s is not in %s" % (fn, fns.keys())
+        print("The function %s is not in %s" % (fn, fns.keys()))
         exit()
 
     n = int(sys.argv[2])
 
     if n < 1:
-        print "n must be >= 1"
+        print("n must be >= 1")
         exit()
 
     f = fns[fn]
-    print f(n)
+    print(f(n))
